@@ -1,0 +1,25 @@
+{
+  "name": "pavmeb",
+  "version": "0.0.1",
+  "description": "Promo website for furniture production business",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fleischers/pavmeb-website.git"
+  },
+  "keywords": [
+    "furniture",
+    "promo",
+    "website"
+  ],
+  "author": "Fleischer458@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fleischers/pavmeb-website/issues"
+  },
+  "homepage": "https://github.com/Fleischers/pavmeb-website"
+}
