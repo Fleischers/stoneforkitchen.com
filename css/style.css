@@ -155,6 +155,11 @@ ul {
   margin: 0;
   list-style: none;
 }
+ul.about_us_ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
 /****Links****/
 a {
   text-decoration: none;
