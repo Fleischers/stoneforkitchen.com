@@ -59,7 +59,7 @@ body {
   background: #ffffff;
   color: #696565;
   font: 300 italic 20px/30px 'Open Sans', sans-serif;
-  min-width: 1400px;
+  min-width: 100%;
 }
 .ic {
 	border:0;
@@ -107,6 +107,7 @@ h2 {
   color: #ffffff;
   font: 48px/36px 'Kreon', serif;
   letter-spacing: 1px;
+  line-height: 50px;
 }
 h2 span {
   margin-top: 53px;
@@ -336,11 +337,14 @@ header h1.logo {
   display: inline-block;
   font: 24px/36px 'Droid Sans', sans-serif;
 }
+.navigation li:first-child {
+  margin-left:1%;
+}
 .navigation li + li {
-  margin-left: 87px;
+  margin-left: 4%;
 }
 .navigation li:first-child + li + li {
-  margin-left: 265px;
+  margin-left: 29%;
 }
 .navigation li a {
   position: relative;
@@ -675,6 +679,9 @@ header h1.logo {
 }
 .gall_item:hover img {
   opacity: 0.2;
+}
+#img_logo {
+
 }
 /****Separators****/
 /****Text styles****/
