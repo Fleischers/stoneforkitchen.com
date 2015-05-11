@@ -105,7 +105,7 @@ h6 {
 }
 h2 {
   color: #ffffff;
-  font: 48px/36px 'Kreon', serif;
+  font: 36px 'Kreon', serif;
   letter-spacing: 1px;
   line-height: 50px;
 }
@@ -370,6 +370,10 @@ header h1.logo {
 .navigation li a:hover:after,
 .navigation li a.current:after {
   width: 84px;
+}
+.menu_list {
+  transition:  0 ;
+  -webkit-transition:  0;
 }
 /****Content****/
 /****Non suppage set****/
@@ -681,7 +685,11 @@ header h1.logo {
   opacity: 0.2;
 }
 #img_logo {
+  display:none;
+  width:50%;
+  margin:15px 25%;
 
+  position:relative;
 }
 /****Separators****/
 /****Text styles****/

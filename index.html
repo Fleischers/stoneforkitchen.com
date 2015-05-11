@@ -7,7 +7,7 @@
 <meta name="description" content="Изделия из акрилового камня, кухонные столешницы, поверхность для ванной комнаты, подоконники, мойки, барные стойки, административные стойки, производство мебели под заказ в Киеве">
 <meta name="keywords" content="кухня, мебель, столешница, акрил, акриловая столешница, кухонная мебель, мебель для кухни, мебель в киеве, заказать кухню, Киев">
 <meta name="author" content="Fleischer@gorlifsense.com">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
 <!-- <link rel="icon" href="images/favicon.ico"> -->
 <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -72,7 +72,7 @@ ga('send', 'pageview');
 <![endif]-->
 </head>
 
-<body>
+<body onload="resize()" onresize="resize()">
 <!--==============================
               header
 =================================-->
@@ -83,21 +83,21 @@ ga('send', 'pageview');
     <div class="container_12">
         <nav>
           <ul>
-           <li><a href="#services" class="current">Услуги</a></li>
-           <li><a href="#portfolio">Галерея</a></li>
-           <li><a href="#about">О нас</a></li>
-           <li><a href="#contacts">Контакты</a></li>
+           <li class="menu_list"><a href="#services" class="current">Услуги</a></li>
+           <li class="menu_list"><a href="#portfolio">Галерея</a></li>
+           <li class="menu_list"><a href="#about">О нас</a></li>
+           <li class="menu_list"><a href="#contacts">Контакты</a></li>
          </ul>
         </nav>
     </div>
   </div>
   <h1 class="logo">
-      <a href="http://stoneforkitchen.com/">
-      <img id="img_logo" src="images/k_logo.png" alt="ЧП Корнейчук">
+      <a id="img_logo" href="http://stoneforkitchen.com/">
+      <img  src="images/k_logo.png" alt="ЧП Корнейчук">
       </a>
   </h1>
   <div class="container_12">
-      <h2>Мы превращаем ваши идеи в готовый результат<br>
+      <h2 id='slogan'>Мы превращаем ваши идеи в готовый результат<br>
         <span></span>
       </h2>
       <a href="contact.html" class="btn">оформить заказ</a>
@@ -155,7 +155,6 @@ ga('send', 'pageview');
 <section id="about" class="page">
   <div class="about_inset__1">
     <div class="container_12">
-      <div class="grid_12">
         <h3 class="head__1">О нас</h3>
         «ЧП Корнейчук» на рынке более 10 лет. Наш опыт и профессионализм это лучший вариант для создания идеального интерьера. Мы поможем увидеть вашу мечту в реальности:
         <ul class="about_us_ul">
@@ -169,7 +168,6 @@ ga('send', 'pageview');
     </div>      <div class="clear"></div>
 
     </div>
-  </div>
   <!-- <div class="about_bg__1">
     <div class="container_12">
       <div class="grid_12">
@@ -242,6 +240,31 @@ ga('send', 'pageview');
                     console.log('done scrolling');
                 }
             });
+
+
+            function resize() {
+              var client = document.documentElement.clientWidth,
+                  list = document.getElementsByClassName('menu_list'),
+                  logimg = document.getElementById('img_logo'),
+                  slogan = document.getElementById('slogan');
+                if (client < 850) {
+                  for(i=0;i<list.length;i++) {
+                  list[i].style.fontSize = "24px" ;
+                  }
+                  list[2].style.marginLeft = "4%";
+                  logimg.style.display = "none";
+                  slogan.style.fontSize = "34px";
+                  slogan.style.lineHeight = "36px";
+                } else {
+                  for(i=0;i<list.length;i++) {
+                  list[i].style.fontSize = "28px" ;
+                  }
+                  logimg.style.display = "block";
+                  list[2].style.marginLeft = "29%";
+                  slogan.style.fontSize = "48px";
+                  slogan.style.lineHeight = "36px";
+                }
+            }
         </script>
 </body>
 </html>
