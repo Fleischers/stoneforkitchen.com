@@ -274,7 +274,7 @@ header .btn {
 /*header*/
 .menu_bg {
   background-color: #000;
-  height: 100px;
+  height: 120px;
   left: 0;
   right: 0;
   top: 0;
@@ -686,8 +686,8 @@ header h1.logo {
 }
 #img_logo {
   display:none;
-  width:50%;
-  margin:15px 25%;
+  width:90%;
+  margin:15px 5%;
 
   position:relative;
 }
@@ -793,4 +793,8 @@ a.color1:hover {
 #toTop:hover {
   outline: none;
   background-color: #000000;
+}
+#portfolio {
+  width:100% !important;
+  overflow: hidden !important;
 }

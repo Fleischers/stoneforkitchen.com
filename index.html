@@ -72,7 +72,7 @@ ga('send', 'pageview');
 <![endif]-->
 </head>
 
-<body onload="resize()" onresize="resize()">
+<body onresize="resize()"  >
 <!--==============================
               header
 =================================-->
@@ -247,7 +247,8 @@ ga('send', 'pageview');
                   list = document.getElementsByClassName('menu_list'),
                   logimg = document.getElementById('img_logo'),
                   slogan = document.getElementById('slogan');
-                if (client < 850) {
+
+                if (client <= 850) {
                   for(i=0;i<list.length;i++) {
                   list[i].style.fontSize = "24px" ;
                   }
@@ -255,7 +256,16 @@ ga('send', 'pageview');
                   logimg.style.display = "none";
                   slogan.style.fontSize = "34px";
                   slogan.style.lineHeight = "36px";
-                } else {
+                } 
+                /*if (client <= 550) {
+                  for(i=0;i<list.length;i++) {
+                  list[i].style.fontSize = "18px" ;
+                  }
+                  list[2].style.marginLeft = "4%";
+                  logimg.style.display = "none";
+                  slogan.style.fontSize = "34px";
+                  slogan.style.lineHeight = "36px";
+                }*/ else {
                   for(i=0;i<list.length;i++) {
                   list[i].style.fontSize = "28px" ;
                   }
@@ -265,6 +275,7 @@ ga('send', 'pageview');
                   slogan.style.lineHeight = "36px";
                 }
             }
+            resize();
         </script>
 </body>
 </html>
