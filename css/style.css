@@ -707,6 +707,9 @@ header h1.logo {
   color: #545252;
   margin-bottom: 32px;
 }
+.text2 img {
+  float:right;
+}
 .color1 {
   color: #474b5d;
 }

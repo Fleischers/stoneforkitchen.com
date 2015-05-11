@@ -98,11 +98,12 @@ body {
 }
 
 .container_12 .grid_5 {
-  width:470px;
+  width:40%;
 }
 
 .container_12 .grid_6 {
-  width:570px;
+  float:right;
+  padding-left:0 !important;
 }
 
 .container_12 .grid_7 {
@@ -126,7 +127,7 @@ body {
 }
 
 .container_12 .grid_12 {
-  width:1170px;
+  width:30%;
 }
 
 
