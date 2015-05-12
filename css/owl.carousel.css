@@ -24,7 +24,7 @@
   height: 64px;
   font-size: 36px;
   line-height: 66px;
-  left: 0;
+  left: 0%;
   top: 50%;
   margin-top: -32px;
   overflow: hidden;
@@ -40,7 +40,7 @@
   background-color: #ffffff;
 }
 #owl .owl-next {
-  right: 0;
+  right: 0%;
   left: auto;
   background-position: right -1px;
 }
@@ -49,4 +49,15 @@
   position: relative;
   -webkit-transform: translate3d(0px, 0px, 0px);
   -webkit-perspective: 1000;
+}
+.owl-item div a {
+  position:relative;
+  background:transparent !important;
+}
+.owl-item div a img {
+  margin:0 auto;
+}
+.owl-prev, .owl-next {
+  left:none !important;
+  right:none !important;
 }

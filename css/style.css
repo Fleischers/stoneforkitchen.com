@@ -59,7 +59,9 @@ body {
   background: #ffffff;
   color: #696565;
   font: 300 italic 20px/30px 'Open Sans', sans-serif;
-  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 .ic {
 	border:0;
@@ -282,7 +284,7 @@ header .btn {
   z-index: 800;
 }
 header {
-  padding-top: 253px;
+  padding-top: 233px;
   color: #e6e5e5;
   display: block;
   position: relative;
@@ -309,7 +311,7 @@ header h1.logo {
   margin-left: -92px;
 }
 .socials {
-  padding-top: 72px;
+  padding-top: 4%;
   font-size: 0;
   line-height: 0;
 }
@@ -773,12 +775,12 @@ a.color1:hover {
   text-decoration: underline;
 }
 #toTop {
-  display: none;
+  display: none !important;
   text-decoration: none;
   position: fixed;
-  bottom: 40px;
+  bottom: 3%;
   left: 51%;
-  margin-left: 640px;
+  margin-left: 50%;
   overflow: hidden;
   border: none;
   border: 1px solid #ffffff;
@@ -800,4 +802,7 @@ a.color1:hover {
 #portfolio {
   width:100% !important;
   overflow: hidden !important;
+}
+.container_12 a[href="contact.html"] {
+  margin-top: 12% ;
 }
